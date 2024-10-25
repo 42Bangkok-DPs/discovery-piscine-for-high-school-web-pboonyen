@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ffff.css">
+</head>
+<body>
+    <nav>
+        <ul class="container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#active">Activities & Certificate</a></li>
+            <li><a href="#actorrr">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- main menu -->
+    <section class="section" id="home">
+
+        <!-- Home content here -->
+    </section>
+
+    <!-- about -->
+    <section class="section" id="about">
+        <h1 class="rainbow">About Me!</h1>
+        <div class="container">
+            <div class="left-column">
+                <img src="phufa.webp" alt="">
+            </div>
+            <div class="right-column">
+                <h1>About Me</h1>
+                <div class="name1">
+                    <p class="big">Name :&nbsp&nbsp</p>
+                    <p>Pattarapol Boonyen</p>
+                </div>
+                <div class="name2">
+                    <p class="big">Nick Name : &nbsp&nbsp</p>
+                    <p>Phufa</p>
+                </div>
+                <div class="name3">
+                    <p class="big">Age : &nbsp&nbsp</p>
+                    <p>18 Years Old</p>
+                </div>
+                <div class="name4">
+                    <p class="big">Birthday : &nbsp&nbsp</p>
+                    <p>28 June 2006</p>
+                </div>
+                <div class="name5">
+                    <p class="big">Gender : &nbsp&nbsp</p>
+                    <p>Male</p>
+                </div>
+                <div class="name6">
+                    <p class="big">Education : &nbsp&nbsp</p>
+                    <p>Stresmutprakan School</p>
+                </div>
+                <div class="name7">
+                    <p class="big">Skills : &nbsp&nbsp</p>
+                    <p><img src="Python.png" alt="" class="move">Python &nbsp&nbsp <img src="html.webp" alt="">HTML </p>
+                    <p><img src="editvideo.avif" alt="" class="move">edit video</p>
+                </div>
+                <div class="name8">
+                    <p class="big">Soft Skills : &nbsp&nbsp</p>
+                    <p>- Emotional Quotient</p>
+                    <p class="secondmove">- Social Quotient</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- activities -->
+    <section class="section" id="active">
+        <h1 class="rainbow">Competition</h1>
+        <div class="nano">
+            <div class="leftna"><h1>Introduction to Python</h1>
+                <img src="42ce.png" alt="">
+            </div>
+            <div class="leftna"><h1>SCI</h1><img src="sci.webp" alt="">
+            </div>
+        </div>
+        <div class="nano">
+            <div class="leftna"><h1>dek-D</h1><img src="dek-D.webp" alt="">
+            </div>
+            <div class="leftna"><h1>Sport Day</h1>
+                <img src="sport day.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="actorrr">
+        <h1 class="rainbow-hard">Contact</h1>
+        <div class="cosmic">
+            <img src="gmail.webp" alt="">
+            <h5>Gmail :</h5>
+            <p>phufa2549@gmail.com</p>
+        </div>
+        <div class="cosmic">
+            <img src="phone.jpg" alt="">
+            <h5>Phone :</h5>
+            <p>0623403355</p>
+        </div>
+        <div class="cosmic">
+            <img src="LINE.png" alt="">
+            <h5>Line :</h5>
+            <p>0623403355</p>
+        </div>
+        <div class="cosmic">
+            <a href="https://www.facebook.com/profile.php?id=100006783967644&locale=th_TH" target="_blank">
+                <img src="facebook.webp" alt="">
+            </a>
+            <h5>Facebook :</h5>
+            <p>Pattarapol Boonyen</p>
+        </div>
+    </section>
+
+    <script>
+        function scrollToSection(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href');
+    
+            if (targetId.startsWith("#")) {
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                window.location.href = targetId;
+            }
+        }
+    
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', scrollToSection);
+        });
+    </script>
+    
+</body>
+</html>
